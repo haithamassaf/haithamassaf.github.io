@@ -534,12 +534,17 @@ footer p {
 }
 
 .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in.animate {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.fade-in.visible {
+.fade-in.animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -588,7 +593,7 @@ footer p {
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         GitHub
       </a>
-      <a href="https://www.linkedin.com/in/haitham-assaf-714122386/" class="btn btn-ghost" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/haithamassaf" class="btn btn-ghost" target="_blank">LinkedIn</a>
       <a href="#contact" class="btn btn-ghost">Get in touch</a>
     </div>
   </div>
@@ -629,9 +634,9 @@ footer p {
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           Source code
         </a>
-        <a href="#">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-          Demo video
+        <a href="https://nba-intelligence-app.streamlit.app/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live demo
         </a>
       </div>
     </div>
@@ -674,7 +679,7 @@ footer p {
       </div>
       <div class="skill-card">
         <h4>ML / AI</h4>
-        <p>Scikit-learn, TensorFlow, XGBoost, LangChain, RAG, Claude API, OpenAI API, Hugging Face</p>
+        <p>LLMs, NLP, RAG Pipelines, Vector Embeddings, LangChain, ChromaDB, Scikit-learn, TensorFlow, XGBoost, Claude API, OpenAI API, Hugging Face</p>
       </div>
       <div class="skill-card">
         <h4>Data</h4>
@@ -700,9 +705,9 @@ footer p {
     </div>
 
     <div class="exp-item">
-      <div class="exp-date">Dec 2025 -- Present</div>
+      <div class="exp-date">Dec 2025 -- Apr 2026</div>
       <div class="exp-content">
-        <h3>Consultation Agent</h3>
+        <h3>Consultation Agent (Seasonal)</h3>
         <div class="company">Geek Squad -- San Jose, CA</div>
         <p>Diagnose and resolve hardware, software, and network issues for 20+ customers weekly. Implement security measures and optimize device configurations across Windows, macOS, and mobile platforms.</p>
       </div>
@@ -712,14 +717,10 @@ footer p {
   <section id="contact" class="fade-in">
     <div class="section-label">Contact</div>
     <div class="contact-grid">
-      <a href="mailto:haitham.assaf@sjsu.edu" class="contact-item">
+      <a href="mailto:haitham.assaf&#64;sjsu.edu" class="contact-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        haitham.assaf@sjsu.edu
+        haitham.assaf&#64;sjsu.edu
       </a>
-      <span class="contact-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        408-916-6493
-      </span>
       <span class="contact-item">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         San Jose, CA
@@ -728,7 +729,7 @@ footer p {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         GitHub
       </a>
-      <a href="https://www.linkedin.com/in/haitham-assaf-714122386/" class="contact-item" target="_blank">
+      <a href="https://www.linkedin.com/in/haithamassaf" class="contact-item" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
@@ -741,17 +742,12 @@ footer p {
   <p>Built by Haitham Assaf -- 2026</p>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+document.querySelectorAll('.fade-in').forEach(el => {
+  el.classList.add('animate');
+});
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-
-</body>
-</html>
+      entry.t
