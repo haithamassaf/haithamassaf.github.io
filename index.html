@@ -6,7 +6,7 @@
 <title>Haitham Assaf — Data Science & ML Engineering</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg-deep:#080C14;--bg-primary:#0B1120;--bg-card:#111827;--bg-card-hover:#1A2332;--border:rgba(148,163,184,0.08);--border-hover:rgba(148,163,184,0.18);--text-primary:#F1F5F9;--text-secondary:#94A3B8;--text-muted:#64748B;--accent:#38BDF8;--accent-dim:rgba(56,189,248,0.12);--green:#34D399;--green-dim:rgba(52,211,153,0.12);--purple:#A78BFA;--purple-dim:rgba(167,139,250,0.12)}
+:root{--bg-deep:#080C14;--bg-primary:#0B1120;--bg-card:#111827;--bg-card-hover:#1A2332;--border:rgba(148,163,184,0.08);--border-hover:rgba(148,163,184,0.18);--text-primary:#F1F5F9;--text-secondary:#94A3B8;--text-muted:#64748B;--accent:#38BDF8;--green:#34D399;--green-dim:rgba(52,211,153,0.12);--purple:#A78BFA;--purple-dim:rgba(167,139,250,0.12)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--bg-deep)}
 body{font-family:'Outfit',sans-serif;color:var(--text-primary);background:var(--bg-deep);-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -21,55 +21,55 @@ nav .logo{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:500;
 nav .nav-links{display:flex;gap:28px;list-style:none}
 nav .nav-links a{font-size:13px;font-weight:400;color:var(--text-muted);text-decoration:none;transition:color 0.3s;letter-spacing:0.3px}
 nav .nav-links a:hover{color:var(--text-primary)}
-.hero{padding:160px 0 100px;position:relative}
+.hero{padding:160px 0 80px;position:relative}
 .hero-label{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;opacity:0;animation:fadeUp 0.6s ease forwards 0.2s}
-.hero h1{font-size:clamp(40px,6vw,64px);font-weight:700;letter-spacing:-2px;line-height:1.05;margin-bottom:20px;opacity:0;animation:fadeUp 0.6s ease forwards 0.4s}
+.hero h1{font-size:clamp(36px,5vw,56px);font-weight:700;letter-spacing:-2px;line-height:1.1;margin-bottom:16px;opacity:0;animation:fadeUp 0.6s ease forwards 0.4s}
 .hero h1 .accent{background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero .subtitle{font-size:18px;font-weight:300;color:var(--text-secondary);line-height:1.6;max-width:520px;margin-bottom:36px;opacity:0;animation:fadeUp 0.6s ease forwards 0.6s}
+.hero .subtitle{font-size:17px;font-weight:300;color:var(--text-secondary);line-height:1.6;max-width:540px;margin-bottom:28px;opacity:0;animation:fadeUp 0.6s ease forwards 0.6s}
 .hero-links{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.6s ease forwards 0.8s}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:500;border-radius:8px;text-decoration:none;transition:all 0.3s;cursor:pointer;border:none}
 .btn-primary{background:var(--accent);color:var(--bg-deep)}
 .btn-primary:hover{filter:brightness(1.15);transform:translateY(-1px)}
 .btn-ghost{background:transparent;color:var(--text-secondary);border:0.5px solid var(--border-hover)}
 .btn-ghost:hover{color:var(--text-primary);border-color:rgba(148,163,184,0.3);background:rgba(148,163,184,0.05)}
-section{padding:80px 0}
-.section-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:40px;display:flex;align-items:center;gap:16px}
+section{padding:60px 0}
+.section-label{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-muted);margin-bottom:32px;display:flex;align-items:center;gap:16px}
 .section-label::after{content:'';flex:1;height:0.5px;background:var(--border)}
-.about-content{font-size:17px;font-weight:300;color:var(--text-secondary);line-height:1.8;max-width:640px}
-.about-content strong{color:var(--text-primary);font-weight:500}
-.status-bar{margin-top:28px;display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:var(--green-dim);border:0.5px solid rgba(52,211,153,0.2);border-radius:8px}
+.status-bar{margin-top:20px;display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:var(--green-dim);border:0.5px solid rgba(52,211,153,0.2);border-radius:8px}
 .status-dot{width:7px;height:7px;background:var(--green);border-radius:50%;animation:pulse 2s infinite}
 .status-bar span{font-size:13px;font-weight:400;color:var(--green)}
-.project-card{background:var(--bg-card);border:0.5px solid var(--border);border-radius:12px;padding:32px;margin-bottom:20px;transition:all 0.4s;position:relative;overflow:hidden}
+.edu-info{font-size:16px;font-weight:300;color:var(--text-secondary);line-height:1.7}
+.edu-info strong{color:var(--text-primary);font-weight:500}
+.project-card{background:var(--bg-card);border:0.5px solid var(--border);border-radius:12px;padding:28px;margin-bottom:16px;transition:all 0.4s;position:relative;overflow:hidden}
 .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:0;transition:opacity 0.4s}
 .project-card:hover{border-color:var(--border-hover);background:var(--bg-card-hover);transform:translateY(-2px)}
 .project-card:hover::before{opacity:0.5}
-.project-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;gap:16px}
-.project-card h3{font-size:20px;font-weight:600;letter-spacing:-0.5px}
+.project-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;gap:16px}
+.project-card h3{font-size:18px;font-weight:600;letter-spacing:-0.5px}
 .badge{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:6px;white-space:nowrap;font-weight:500}
 .badge-live{background:var(--green-dim);color:var(--green);border:0.5px solid rgba(52,211,153,0.25)}
 .badge-new{background:var(--purple-dim);color:var(--purple);border:0.5px solid rgba(129,140,248,0.25)}
-.project-card p{font-size:15px;font-weight:300;color:var(--text-secondary);line-height:1.7;margin-bottom:20px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.project-card p{font-size:14px;font-weight:300;color:var(--text-secondary);line-height:1.7;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
 .tag{font-family:'JetBrains Mono',monospace;font-size:11px;padding:4px 10px;background:rgba(148,163,184,0.06);border:0.5px solid var(--border);border-radius:5px;color:var(--text-muted)}
 .project-actions{display:flex;gap:20px}
 .project-actions a{font-size:13px;font-weight:400;color:var(--accent);text-decoration:none;display:flex;align-items:center;gap:6px;transition:opacity 0.3s}
 .project-actions a:hover{opacity:0.8}
 .project-actions a svg{width:14px;height:14px}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
-.skill-card{background:var(--bg-card);border:0.5px solid var(--border);border-radius:10px;padding:20px 24px;transition:border-color 0.3s}
+.skill-card{background:var(--bg-card);border:0.5px solid var(--border);border-radius:10px;padding:18px 22px;transition:border-color 0.3s}
 .skill-card:hover{border-color:var(--border-hover)}
-.skill-card h4{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
-.skill-card p{font-size:14px;font-weight:300;color:var(--text-secondary);line-height:1.7}
+.skill-card h4{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:10px}
+.skill-card p{font-size:13px;font-weight:300;color:var(--text-secondary);line-height:1.7}
 .coursework-list{display:flex;flex-wrap:wrap;gap:8px}
 .course-tag{font-size:13px;padding:6px 14px;background:var(--bg-card);border:0.5px solid var(--border);border-radius:8px;color:var(--text-secondary);font-weight:300}
-.exp-item{display:flex;gap:24px;padding:24px 0;border-bottom:0.5px solid var(--border)}
+.exp-item{display:flex;gap:24px;padding:20px 0;border-bottom:0.5px solid var(--border)}
 .exp-item:last-child{border-bottom:none}
 .exp-date{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--text-muted);min-width:130px;padding-top:3px}
 .exp-content h3{font-size:16px;font-weight:500;margin-bottom:4px}
 .exp-content .company{font-size:14px;color:var(--accent);margin-bottom:8px}
 .exp-content p{font-size:14px;font-weight:300;color:var(--text-secondary);line-height:1.6}
-.contact-grid{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.contact-grid{display:flex;flex-wrap:wrap;gap:12px}
 .contact-item{display:flex;align-items:center;gap:10px;padding:12px 20px;background:var(--bg-card);border:0.5px solid var(--border);border-radius:8px;font-size:14px;color:var(--text-secondary);text-decoration:none;transition:all 0.3s}
 a.contact-item:hover{border-color:var(--border-hover);color:var(--text-primary)}
 .contact-item svg{width:16px;height:16px;color:var(--text-muted)}
@@ -80,7 +80,7 @@ footer p{font-size:13px;color:var(--text-muted)}
 .fade-in{opacity:1;transform:translateY(0)}
 .fade-in.animate{opacity:0;transform:translateY(16px);transition:opacity 0.5s ease,transform 0.5s ease}
 .fade-in.animate.visible{opacity:1;transform:translateY(0)}
-@media(max-width:640px){.container{padding:0 16px}.hero{padding:120px 0 60px}nav .nav-links{gap:16px}nav .nav-links a{font-size:12px}.exp-item{flex-direction:column;gap:8px}.exp-date{min-width:unset}.project-card{padding:24px}}
+@media(max-width:640px){.container{padding:0 16px}.hero{padding:120px 0 60px}nav .nav-links{gap:16px}nav .nav-links a{font-size:12px}.exp-item{flex-direction:column;gap:8px}.exp-date{min-width:unset}.project-card{padding:20px}}
 </style>
 </head>
 <body>
@@ -91,7 +91,6 @@ footer p{font-size:13px;color:var(--text-muted)}
   <div class="nav-inner">
     <span class="logo">HA</span>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#coursework">Coursework</a></li>
@@ -103,28 +102,21 @@ footer p{font-size:13px;color:var(--text-muted)}
 <div class="container">
   <div class="hero">
     <div class="hero-label">Data Science / ML Engineering</div>
-    <h1>Building tools that <br><span class="accent">solve real problems</span>.</h1>
-    <p class="subtitle">22-year-old data science student at SJSU turning raw data into deployed ML applications that people actually use.</p>
+    <h1>Haitham Assaf</h1>
+    <p class="subtitle">Data Science student at San Jose State University (Fall 2026). Focused on machine learning, NLP, and AI engineering.</p>
     <div class="hero-links">
       <a href="https://github.com/haithamassaf" class="btn btn-primary" target="_blank">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         GitHub
       </a>
       <a href="https://www.linkedin.com/in/haithamassaf" class="btn btn-ghost" target="_blank">LinkedIn</a>
-      <a href="#contact" class="btn btn-ghost">Get in touch</a>
-    </div>
-  </div>
-
-  <section id="about" class="fade-in">
-    <div class="section-label">About</div>
-    <div class="about-content">
-      I'm <strong>Haitham</strong>, a 22-year-old <strong>Data Science student at San Jose State University</strong> (graduating Fall 2026). I enjoy solving real-world problems with code and data, whether that's building an AI assistant that answers NBA questions with real stats, or a tool that helps job seekers tailor their resumes to specific roles. I'm drawn to projects where I can take something from idea to deployed product that people can actually interact with. Right now I'm focused on <strong>machine learning, NLP, and AI engineering</strong>, and I'm always looking for the next interesting problem to tackle.
+      <a href="mailto:haitham.assaf&#64;sjsu.edu" class="btn btn-ghost">Email</a>
     </div>
     <div class="status-bar">
       <div class="status-dot"></div>
       <span>Open to internships in DS, ML, and AI engineering</span>
     </div>
-  </section>
+  </div>
 
   <section id="projects" class="fade-in">
     <div class="section-label">Projects</div>
@@ -134,7 +126,7 @@ footer p{font-size:13px;color:var(--text-muted)}
         <h3>ResumeMatch AI</h3>
         <span class="badge badge-new">New</span>
       </div>
-      <p>An NLP-powered tool that analyzes how well your resume matches a job description. Upload a resume PDF, paste a job posting, and get a weighted match score combining TF-IDF keyword analysis with LLM-based semantic matching. Identifies missing skills, highlights strengths, and rewrites your bullet points to better align with the role.</p>
+      <p>NLP-powered tool that analyzes resume-job description fit using TF-IDF keyword matching and LLM-based semantic analysis via Claude API. Features a smart skill taxonomy, AI bullet point rewriter, and interactive dashboard with match scores and skill gap visualizations.</p>
       <div class="tags">
         <span class="tag">Python</span>
         <span class="tag">Claude API</span>
@@ -162,7 +154,7 @@ footer p{font-size:13px;color:var(--text-muted)}
         <h3>NBA Intelligence Hub</h3>
         <span class="badge badge-live">Live</span>
       </div>
-      <p>A conversational AI assistant that answers natural language NBA questions grounded in real-time stats. Built with a RAG pipeline combining structured stat lookups with semantic vector search over 478 player and team summaries. Ask it anything about the current season and get answers backed by actual numbers.</p>
+      <p>Conversational AI assistant answering natural language NBA questions grounded in real-time stats. RAG pipeline combining structured stat lookups with semantic vector search over 478 player and team summaries.</p>
       <div class="tags">
         <span class="tag">Python</span>
         <span class="tag">Claude API</span>
@@ -189,7 +181,7 @@ footer p{font-size:13px;color:var(--text-muted)}
         <h3>NBA Awards Prediction Dashboard</h3>
         <span class="badge badge-live">Live</span>
       </div>
-      <p>Full-stack ML application predicting NBA MVP, DPOY, and Sixth Man awards using a custom dataset of 16,500+ game-level records scraped from Basketball Reference. Applied K-Means clustering to classify 340+ players into performance tiers, with an interactive dashboard featuring award leaderboards, radar charts, and real-time prediction tools.</p>
+      <p>Full-stack ML app predicting NBA MVP, DPOY, and Sixth Man awards using a custom dataset of 16,500+ game-level records. K-Means clustering classifies 340+ players into performance tiers with interactive leaderboards and radar charts.</p>
       <div class="tags">
         <span class="tag">Python</span>
         <span class="tag">Scikit-learn</span>
